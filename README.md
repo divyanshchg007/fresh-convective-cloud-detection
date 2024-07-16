@@ -13,7 +13,7 @@ This repository contains a Python script designed to detect fresh convective clo
 
 ### Prerequisites
 
-Ensure you have Python 3.x installed. You can download it from [python.org](https://www.python.org/downloads/).
+Ensure you have Python 3.6+ installed.
 
 ### Dependencies
 
