@@ -73,7 +73,7 @@ Adjust the paths in the 'filenamegen' function and 'savepath' variable.
 
 Contributions are welcome! Please fork this repository and submit pull requests to contribute. Ensure your code follows best practices and is well-documented.
 
-Steps to Contribute:
+### Steps to Contribute:
     - Fork this repository.
     - Create a new branch (git checkout -b feature-branch).
     - Make your changes.
