@@ -36,16 +36,16 @@ cd fresh-convective-cloud-detection
 
 ### Running the Script
 
-The script requires five command-line arguments: start year, end year, cold core temperature, cloud threshold temperature, and cooling rate. It is currently setup to run for an entire month and save the corresponding monthly list of the time and location of where convective clouds initiate.
+The script requires five command-line arguments: 'start year', 'end year', 'cold core temperature', 'cloud threshold temperature', and 'cooling rate'. It is currently setup to run for an entire month and save the corresponding monthly list of the time and location of where convective clouds initiate.
 
 1. Set up the necessary parameters and paths:
-    - Ensure the `data_dir` variable in `extract_fresh_dcc.py` points to your data directory containing MERGIR data.
-    - Set the `savepath` variable to specify where outputs (CSV files and NetCDF files) should be saved.
+    - Ensure the 'data_dir' variable in 'extract_fresh_dcc.py' points to your data directory containing geostationary satellite data.
+    - Set the 'savepath' variable to specify where outputs (CSV files and NetCDF files) should be saved.
 
-2. Replace <start year>, <end year>, <cold core temp>, <cloud thres>, and <cooling rate> in `extract_fresh_dcc.py` with appropriate values.
-    - <cold core temp>: Specifies the temperature threshold for identifying cold cores in deep convective clouds. Units: K.
-    - <cloud thres>: Defines the temperature threshold to distinguish convective clouds from other atmospheric features. Units: K.
-    - <cooling rate>: Sets the rate of temperature change used to identify fresh cloud growth. Units: K/hour.
+2. Replace 'start year', 'end year', 'cold core temp', 'cloud thres', and 'cooling rate' in 'extract_fresh_dcc.py' with appropriate values.
+    - cold core temp: Specifies the temperature threshold for identifying cold cores in deep convective clouds. Units: K.
+    - cloud thres: Defines the temperature threshold to distinguish convective clouds from other atmospheric features. Units: K.
+    - cooling rate: Sets the rate of temperature change used to identify fresh cloud growth. Units: K/hour.
 
 3. Run the main script with the following arguments:
 
@@ -64,10 +64,10 @@ This example processes data from 2020 to 2021 with a cold core temperature of 23
 ### Directory Structure
 
 Ensure the following directories exists:
-    - <data_dir>
-    - <savepath>
+    - data_dir
+    - savepath
 
-Adjust the paths in the 'filenamegen' function and <savepath> variable.
+Adjust the paths in the 'filenamegen' function and 'savepath' variable.
 
 ## Contributing
 
