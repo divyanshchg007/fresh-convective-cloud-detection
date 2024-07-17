@@ -63,6 +63,8 @@ The core script 'extract_fresh_dcc.py' requires five command-line arguments: 'ye
 python extract_fresh_dcc.py <year> <month> <cold core temp> <cloud thres> <cooling rate>
 ```
 
+5. Make sure to apply parallax correction to the detected cloud locations using the llax_correction.py script.
+
 ### Example
 
 ```
