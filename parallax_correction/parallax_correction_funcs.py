@@ -93,7 +93,7 @@ def era_Tlapse_height(month, year, temp, lon, lat):
     :param lat: latitude
     :return: approximate height above surface
     """
-    path  = '/data/keeling/a/dchug2/a/ERA5/monthly/nwindia_z_t/'
+    path  = '../data/ERA5_yearly_NWIndia/'
     file = path + 'geopot_temperature_' + str(year) + '.nc'  # path to ERA5
     da = xr.open_dataset(file)
     da = da.sel(longitude=lon, latitude=lat, method='nearest')
