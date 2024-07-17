@@ -34,7 +34,7 @@ def filenamegen(year, mon, day, utc):
     dateminus_str = dateminus.strftime('%Y%m%d%H')
 
     # Define the directory where the data files are stored
-    datadir = '/data/keeling/a/dchug2/a/GPM_MERGIR/nwindia_clipped/'
+    datadir = 'data/NWIndia_clipped/'
 
     # Construct filenames using the formatted datetime strings
     fname = os.path.join(datadir, f'merg_{date_str}_4km-pixel.nc4')
