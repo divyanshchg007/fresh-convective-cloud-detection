@@ -328,7 +328,7 @@ def main():
                  'cloud_thres': cloud_thres, 'coolrate': coolrate}
     constants['vicrad'] = int((constants['vicsize']-1)/2)
     constants['domrad'] = int((constants['domsize']-1)/2)
-    savepath = "/data/keeling/a/dchug2/f/projects_final/nwindia_SM_convection/tracking/monthly_clouds/test_github_07162024/"
+    savepath = "data/NWIndia_clipped/"
     
     # Iterate over the specified years and months
     mon_day = monthrange(year, mon)[1]
