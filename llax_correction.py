@@ -20,8 +20,8 @@ mon_arr = np.array([int(sys.argv[4])])
 mon_dict = {1:'jan',2:'feb',3:'mar',4:'apr',5:'may',6:'jun',7:'jul',8:'aug',9:'sep',10:'oct',11:'nov',12:'dec'}
 
 ####### relevant directories
-df_path = '/data/keeling/a/dchug2/f/projects_final/nwindia_SM_convection/tracking/monthly_clouds/'
-save_path = '/data/keeling/a/dchug2/f/projects_final/nwindia_SM_convection/tracking/monthly_clouds/llax_correction/'
+df_path = 'resuts/'
+save_path = 'results/llax_corrected/'
 
 ####### loop over years
 year = startyear
