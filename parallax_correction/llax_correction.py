@@ -15,7 +15,7 @@ lon_sat = 41.5
 startyear = int(sys.argv[1])
 endyear = int(sys.argv[2])
 #mon_arr = np.array([int(sys.argv[3])])
-mon_arr = np.array([6,7,8,9])
+mon_arr = np.array([int(sys.argv[4])])
 #mon_arr = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
 mon_dict = {1:'jan',2:'feb',3:'mar',4:'apr',5:'may',6:'jun',7:'jul',8:'aug',9:'sep',10:'oct',11:'nov',12:'dec'}
 
