@@ -2,6 +2,8 @@
 
 This repository contains a Python script designed to detect fresh convective cloud growth using geostationary satellite data. The script processes data files, applies various checks and criteria to identify convective clouds, and saves the results in both CSV and NetCDF formats.
 
+![Demo](assets/demo.gif)
+
 ## Table of Contents
 
 - [Installation](#installation)
