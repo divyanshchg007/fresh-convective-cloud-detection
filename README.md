@@ -36,30 +36,32 @@ cd fresh-convective-cloud-detection
 
 ### Running the Script
 
-The script requires five command-line arguments: 'start year', 'end year', 'cold core temperature', 'cloud threshold temperature', and 'cooling rate'. It is currently setup to run for an entire month and save the corresponding monthly list of the time and location of where convective clouds initiate.
+The core script 'extract_fresh_dcc.py' requires five command-line arguments: 'year', 'mon', 'cold core temperature', 'cloud threshold temperature', and 'cooling rate'. It is currently setup to run for an entire month and save the corresponding monthly list of the time and location of where convective clouds initiate.
 
 1. Set up the necessary parameters and paths:
     - Ensure the 'data_dir' variable in 'extract_fresh_dcc.py' points to your data directory containing geostationary satellite data.
-    - Set the 'savepath' variable to specify where outputs (CSV files and NetCDF files) should be saved.
+    - Set the 'savepath' variable in to specify where outputs (CSV files and NetCDF files) should be saved.
 
-2. Replace 'start year', 'end year', 'cold core temp', 'cloud thres', and 'cooling rate' in 'extract_fresh_dcc.py' with appropriate values.
+2. Input the desired 'year', 'mon', 'cold core temp', 'cloud thres', and 'cooling rate' in 'extract_fresh_dcc.py' with appropriate values.
     - cold core temp: Specifies the temperature threshold for identifying cold cores in deep convective clouds. Units: K.
     - cloud thres: Defines the temperature threshold to distinguish convective clouds from other atmospheric features. Units: K.
     - cooling rate: Sets the rate of temperature change used to identify fresh cloud growth. Units: K/hour.
 
-3. Run the main script with the following arguments:
+3. Optional: Adjust the cloud definition parameters in the constants dictionary, such as the size of the cloud detection window defined by 'domsize'. 
+
+4. Run the main script with the following arguments:
 
 ```
-python extract_fresh_dcc.py <start year> <end year> <cold core temp> <cloud thres> <cooling rate>
+python extract_fresh_dcc.py <year> <month> <cold core temp> <cloud thres> <cooling rate>
 ```
 
 ### Example
 
 ```
-python extract_fresh_dcc.py 2020 2021 235 253 -10
+python extract_fresh_dcc.py 2020 7 235 253 -10
 ```
 
-This example processes data from 2020 to 2021 with a cold core temperature of 235K, a cloud threshold temperature of 253K, and a cooling rate of 10K/hour.
+This example processes data from July of 2020 with a cold core temperature of 235K, a cloud threshold temperature of 253K, and a cooling rate of 10K/hour.
 
 ### Directory Structure
 
@@ -67,7 +69,7 @@ Ensure the following directories exists:
     - data_dir
     - savepath
 
-Adjust the paths in the 'filenamegen' function and 'savepath' variable.
+Adjust the paths in the 'filenamegen' function and the 'savepath' variable.
 
 ## Contributing
 
