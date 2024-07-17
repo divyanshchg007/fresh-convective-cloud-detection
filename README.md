@@ -23,6 +23,12 @@ Install the required Python packages using `pip`:
 pip install numpy netCDF4 xarray pandas
 ```
 
+### Required Dataset
+
+This repository is set up to work with the NCEP/CPC Level 3 Merged Infrared Brightness Temperatures dataset. See [Dataset Page](https://gpm.nasa.gov/data/directory/ncepcpc-level-3-merged-infrared-brightness-temperatures-0) for more details. The preferred method to download global dataset files is through the [NASA Earthdata portal](https://search.earthdata.nasa.gov/search).
+
+As a teaser, this repo provides two days of hourly input for two different regions - [Subtropical South America](https://github.com/divyanshchg007/fresh-convective-cloud-detection/tree/b6890f7800a02d563c5a59efcde11adfa15264a5/data/SouthAmerica_Subtrop_clipped) and [Northwest India](https://github.com/divyanshchg007/fresh-convective-cloud-detection/tree/b6890f7800a02d563c5a59efcde11adfa15264a5/data/NWIndia_clipped). These regional files were clipped from the global dataset using [Climate Data Operators (CDO) library](https://code.mpimet.mpg.de/projects/cdo). 
+
 ### Cloning the Repository
 
 Clone this repository to your local machine using:
