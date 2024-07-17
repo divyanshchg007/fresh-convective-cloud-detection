@@ -63,7 +63,7 @@ The core script 'extract_fresh_dcc.py' requires five command-line arguments: 'ye
 python extract_fresh_dcc.py <year> <month> <cold core temp> <cloud thres> <cooling rate>
 ```
 
-5. Make sure to apply parallax correction to the detected cloud locations using the llax_correction.py script.
+5. Make sure to apply parallax correction to the detected cloud locations using the llax_correction.py script. Modify the location of the satellite (latitude, longitude) based on the region. Currently set to Meteosat for analysis over NW India.
 
 ### Example
 
