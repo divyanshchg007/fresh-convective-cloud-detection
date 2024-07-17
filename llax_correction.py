@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 import glob
-from parallax_correction_funcs import haversine, parallax_correction, era_Tlapse_height, call_parallax_era
+from parallax_correction_funcs.parallax_correction_funcs import haversine, parallax_correction, era_Tlapse_height, call_parallax_era
 import sys
 
 ####### satellite position
